@@ -1,0 +1,41 @@
+/* import google font "Roboto" and "Lato" from the design prototype */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* integrate tailwind styles */
+@import 'tailwindcss';
+
+/**
+* extend the default tailwind theme
+*/
+@theme {
+  /* add new colors from the design prototype */
+  --color-task-biscay: #1d3178;
+  --color-task-black: #000000;
+  --color-task-blueribbon: #0843fc;
+  --color-task-bluezodiac: #15245e;
+  --color-task-brightathensgray: #f0eff2;
+  --color-task-cadetblue: #a1a8c1;
+  --color-task-darkathensgray: #e7e7ef;
+  --color-task-frenchgray: #bebfc2;
+  --color-task-iron: #e1e1e4;
+  --color-task-mountainmeadow: #19d16f;
+  --color-task-periwinklegray: #c5cbe3;
+  --color-task-silver: #c4c4c4;
+  --color-task-whisper: #e8e6f1;
+  --color-task-white: #ffffff;
+  --color-task-white-lilac: #f4f4fc;
+  --color-task-wildstrawberry: #fb2e86;
+
+  /* add new fonts from the design prototype */
+  --font-lato: 'Lato', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+@import './base.css';
+
+#mainApp {
+  max-width: 1370px;
+  margin: 0 auto;
+  width: 100%;
+}
